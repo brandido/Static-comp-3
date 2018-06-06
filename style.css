@@ -1,0 +1,214 @@
+body {
+  background-color: grey;
+/*   min-width: 900px; */
+/*   margin: 0 auto; */
+  display: flex;
+  box-sizing: border-box;
+   height: -webkit-fill-available; 
+}
+
+/* Sidebar Navigation */
+
+.column-1 {
+/*   min-height: 20rem; */
+  flex: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  background-color: #364051;
+  color: #798497;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-nav1 {
+  flex: 12%;
+  /*background-color: brown;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot {
+  background-color: blue;
+  border-radius: 50%;
+  background-image: url(images/shawn_headshot.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 5em;
+  width: 5em;
+}
+
+.sidebar-nav2 {
+  flex: 18%;
+  /*background-color: yellow;*/
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-buttons {
+  padding: 1em;
+}
+
+.sidebar-nav3 {
+  flex: 18%;
+  /*background-color: crimson;*/
+}
+
+.sidebar-nav4 {
+  flex: 48%;
+  /*background-color: cornflowerblue;*/
+}
+
+/* Header */
+.column-2 {
+  flex: 85%;
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Top Header */
+.header-1 {
+  flex: 4%;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  flex: 20%
+}
+
+.search-box {
+  flex: 60%;
+  background-color: orange;
+}
+
+.three-images {
+  flex: 10%;
+  background-color: blue;
+  display: flex;
+}
+
+.three-images div {
+  flex: 33.33%;
+}
+
+/* Second from top Heading  */
+.header-2 {
+  background-color: red;
+/*   flex: 12%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container-header-2 {
+  display: flex;
+}
+
+fieldset {
+  background-color: cornflowerblue;
+  flex: 72%;
+}
+
+.nav-right {
+  background-color: purple;
+  display: flex;
+  flex: 23%;
+}
+
+.nav-bottom {
+  background-color: yellow;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+/* .nav-bottom,h6 {
+  background-color: brown;
+}
+ */
+
+/* Middle section with graphs */
+section {
+  background-color: #edf2f6;
+  flex: 24%;
+  display: flex;
+}
+
+.section-container-left {
+  /*background-color: blue;*/
+  flex: 53%
+}
+
+.circle-graphs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-graph {
+  background-color: #edf2f6;
+  border: 1rem solid;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border-color: red green green green;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-graph.two {
+  border-color: green red red red;
+}
+
+.circle-graph.three {
+  border-color: red red green green;
+}
+
+.inside-text {
+  align-self: center;
+}
+
+
+.section-container-right {
+  /*background-color: crimson;*/
+  flex: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-graph {
+  background-color: green;
+  height: 5rem;
+  width: 5rem;
+}
+
+/* bottom section with job description on left and 
+social media buttons on right*/
+
+main {
+  background-color: #edf2f6;
+  flex: 60%;
+  display: flex;
+}
+
+.main-container-left {
+  background-color: brown;
+  flex: 53%;
+  display: flex;
+}
+
+.header-job-description {
+  background-color: grey;
+  flex: 10%;
+}
+
+.main-container-right {
+  /*background-color: pink;*/
+  flex: 26%;
+}
+
