@@ -1,10 +1,16 @@
+* {
+  border: solid red 1px !important;
+  
+}
+
 body {
   background-color: grey;
 /*   min-width: 900px; */
 /*   margin: 0 auto; */
   display: flex;
   box-sizing: border-box;
-   height: -webkit-fill-available; 
+
+  height: -webkit-fill-available; 
 }
 
 /* Sidebar Navigation */
@@ -33,13 +39,13 @@ body {
 }
 
 .headshot {
-  background-color: blue;
+  /*background-color: blue;*/
   border-radius: 50%;
   background-image: url(images/shawn_headshot.jpg);
-  background-position: center;
+  /*background-position: center;*/
   background-size: cover;
-  height: 5em;
-  width: 5em;
+  height: 50px;
+  width: 50px;
 }
 
 .sidebar-nav2 {
@@ -84,7 +90,11 @@ body {
 
 .search-box {
   flex: 60%;
-  background-color: orange;
+  display: flex;
+}
+
+.search-input {
+  width: 100%;
 }
 
 .three-images {
@@ -181,10 +191,59 @@ section {
   align-items: center;
 }
 
+.section-container-right-buttons {
+  background-color: #edf2f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24%;
+}
+
 .bar-graph {
   background-color: green;
-  height: 5rem;
-  width: 5rem;
+  background-image: url(images/bar-graph.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 69%;
+  width: 58%;
+}
+
+.social-buttons {
+  flex: 26%;
+}
+
+.facebook {
+  background-color: #4a6fc1
+}
+
+.twitter {
+  background-color: #02a9ef;
+}
+
+.linkedin {
+  background-color: #0381bc;
+}
+
+.lower-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.link {
+  background-color: orange;
+  flex: 33.33%
+}
+
+.use {
+  background-color: blue;
+  flex: 33.33%;
+}
+
+.update {
+  background-color: yellow;
+  flex: 33.33%;
 }
 
 /* bottom section with job description on left and 
@@ -200,15 +259,27 @@ main {
   background-color: brown;
   flex: 53%;
   display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+
+}
+
+.job-descripton {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20%;
 }
 
 .header-job-description {
   background-color: grey;
-  flex: 10%;
+  height: 100%;
+  flex: auto;
 }
 
 .main-container-right {
   /*background-color: pink;*/
   flex: 26%;
+  margin: 0 3%;
 }
 
