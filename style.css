@@ -1,16 +1,7 @@
-/** {
-  border: solid red 1px !important;
-  
-}*/
+
 
 body {
-  /*background-color: grey;*/
-/*   min-width: 900px; */
-/*   margin: 0 auto; */
   box-sizing: border-box;
-  /*height: 100vh;*/
-
-  
 }
 
 .flex {
@@ -21,9 +12,8 @@ body {
 /* Sidebar Navigation */
 
 .column-1 {
-/*   min-height: 20rem; */
-  flex: 15%;
   display: flex;
+  flex: 15%;
   flex-direction: column;
 }
 
@@ -40,32 +30,28 @@ body {
 }
 
 .sidebar-nav1 {
-  flex: 12%;
-  /*background-color: brown;*/
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  border-bottom: 3px solid #303744
+  display: flex;
+  flex: 12%;
+  flex-direction: column;
   justify-content: space-around;
   min-height: 10em;
-  border-bottom: 3px solid #303744
 }
 
 .headshot {
-  /*background-color: blue;*/
-  border-radius: 50%;
   background-image: url(images/shawn_headshot.jpg);
-  /*background-position: center;*/
   background-size: cover;
+  border-radius: 50%;
   min-height: 6em;
   min-width: 6em;
 }
 
 .sidebar-nav2 {
+  border-bottom: 3px solid #303744
   flex: 18%;
-  /*background-color: yellow;*/
   flex-direction: column;
   justify-content: space-around;
-  border-bottom: 3px solid #303744
 }
 
 .nav-buttons {
@@ -104,8 +90,8 @@ body {
 }
 
 .sidebar-nav3 {
-  flex: 18%;
   border-bottom: 3px solid #303744
+  flex: 18%;
 }
 
 .users-icon {
@@ -151,36 +137,32 @@ body {
 /* Header */
 
 .column-2 {
-  flex: 85%;
   display: flex;
+  flex: 85%;
   flex-direction: column; 
 }
 
 /* Top Header */
 
 .header-1 {
-  flex: 8%;
   display: flex;
+  flex: 8%;
 }
 
 .nav-button {
-  width: 5em
   border-right: 1px solid #f2f2f4;
   border-bottom: 1px solid #f2f2f4;
   background-image: url(images/menu.svg);
+  width: 5em
 }
 
 .search-box {
-  flex: 60%;
-  display: flex;
   align-items: center;
+  display: flex;
+  flex: 60%;
 }
 
 .search-input {
-  width: 100%;
-  height: 100%;
-  text-indent: 3em;
-  font-size: 1em;
   border: none;
   border-top: 1.5px solid #f2f2f5;
   border-bottom: 1.5px solid #f2f2f5;
@@ -188,12 +170,16 @@ body {
   background-size: 1.5em;
   background-repeat: no-repeat;
   background-position: left;
+  font-size: 1em;
+  text-indent: 3em;
+  height: 100%;
+  width: 100%;
 }
 
 .three-images {
-  flex: 10%;
-  display: flex;
   align-items: center
+  display: flex;
+  flex: 10%;
 }
 
 .three-images button {
@@ -205,7 +191,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  /*width: 3.5em;*/
   padding: 3em;
 }
 
@@ -222,17 +207,18 @@ body {
 }
 
 /* Second from top Heading  */
+
 .header-2 {
   background-color: #FFF;
-  flex: 19%; 
   display: flex;
+  flex: 19%; 
   flex-direction: column;
 }
 
 .top-container-header-2 {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 3em 0;
 }
 
@@ -264,31 +250,31 @@ fieldset {
 
 .nav-right {
   display: flex;
-  justify-content: space-between;
   flex: 23%;
+  justify-content: space-between;
   min-width: 15em;
   margin-right: 3em;
 }
 
 .button-title {
-  width: 2.5em;
-  height: 3.5em;
-  border: 2px solid #dee4e9;
-  display: inline-block;
-  vertical-align: middle;
-  color: #9ca3ae;
   background-color: inherit;
-  text-align: center;
-  cursor: pointer;
+  border: 2px solid #dee4e9;
   border-radius: 50%;
+  color: #9ca3ae;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.5em;
+  text-align: center;
+  vertical-align: middle;
+  width: 2.5em;
 }
 
 .button-open {
+  align-items: center;
+  border-radius: 5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 6rem;
-  border-radius: 5rem;
 }
 
 .edit-btns {
@@ -313,25 +299,23 @@ fieldset {
 
 .nav-bottom {
   display: flex;
-  width: 80%;
   justify-content: space-evenly;
   margin-bottom: 2em;
+  width: 80%;
 }
-
 
 /* Middle section with graphs */
 
 section {
   background-color: #edf2f6;
-  flex: 32%;
   display: flex;
-  /*border-bottom: 1px solid darkgrey;*/
+  flex: 32%;
 }
 
 .section-container-left {
+  align-items: center;  
   display: flex;
   flex-direction: column;
-  align-items: center;  
 }
 .section-container-left {
   flex: 53%
@@ -387,44 +371,41 @@ section {
 }
 
 .graph-info {
-  /*margin-top: 2rem;*/
-  padding: 0.5em 1em 0.5em 1em;
   background-color: #fafafc;
   border-radius: 3em;
   border: 2px solid #e0e5eb;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
 .section-container-right {
-  /*background-color: crimson;*/
-  flex: 47%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex: 47%;
+  flex-direction: column;
 }
 
 .section-container-right-buttons {
   background-color: #edf2f6;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 24%;
+  justify-content: space-between;
 }
 
 .bar-graph {
   background-image: url(images/bar-graph.png);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 1em;
   min-height: 14.5em;
   min-width: 29em;
-  margin-top: 1em;
 }
-
 
 /*Divider*/
 
 .middle-divider {
-  flex: 8%;
   display: flex;
+  flex: 8%;
   justify-content: center
 }
 
@@ -437,34 +418,32 @@ social media buttons on right*/
 
 main {
   background-color: #edf2f6;
-  flex: 67%;
   display: flex;
+  flex: 67%;
 }
 
 .main-container-left {
   flex: 53%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   margin: 0 3%;
 }
 
 /*Job Description Table*/
 
-
 .job-descripton {
-  table-layout: fixed;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 100%;
   height: 20%;
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
 }
 
 .header-job-description {
   background-color: #727d93;
   height: 100%;
   padding: 1em;
-  /*flex: auto;*/
 }
 
 tbody {
@@ -472,8 +451,8 @@ tbody {
 }
 
 .th-1 {
-  font-size: 1.2em;
   color: #fff;
+  font-size: 1.2em;
 }
 
 th {
@@ -482,34 +461,31 @@ th {
 }
 
 .edit-job-btn {
-  margin-left: 1em;
+  border: none;
   background-color: #7E8BA4;
-    border: none;
-    border-radius: 3px;
-    color: #FFFFFF;
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 0.5rem 1rem
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: 1em;
+  padding: 0.5rem 1rem
 }
 
-
-
 .main-container-right {
-  /*background-color: pink;*/
   flex: 26%;
   margin: 0 3%;
 }
 
 .social-buttons {
-  flex: 26%;
-  margin: 1em;
   border: none;
   border-radius: 4px;
   color: #fff;
   display: flex;
   font-size: 0.75rem;
+  flex: 26%;
   height: 3rem;
   justify-content: center;
+  margin: 1em;
   margin: 0 0 1rem;
   padding: 0 0 0 0;
   width: 100%;
@@ -587,16 +563,16 @@ h4 {
 }
 
 .social-tags {
+  align-items: center;
   background-color: #fff;
   color: #727D93;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 0.75rem;
   font-weight: 600;
   height: 2.5rem;
-  width: 80%;
   margin: 1em 0 1em 0;
+  width: 80%;
 }
 
 .copy-button {
