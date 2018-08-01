@@ -36,7 +36,7 @@ body {
 }
 
 .nav-title {
-  margin: 1em;
+  margin: 1em 2em 0 2em;
 }
 
 .sidebar-nav1 {
@@ -72,19 +72,80 @@ body {
   padding: 1em;
 }
 
+.sidebar-icons {
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.home-icon {
+  background-image: url(images/home.svg);
+}
+
+.jobs-icon {
+  background-image: url(images/briefcase.svg);
+}
+
+.cv-icon {
+  background-image: url(images/portfolio.svg);
+}
+
+.tasks-icon {
+  background-image: url(images/cv.svg);
+}
+
+.calendar-icon {
+  background-image: url(images/calendar.svg);
+}
+
 .sidebar-nav-choices {
   margin: 1em;
+  padding-left: 2em;
 }
 
 .sidebar-nav3 {
   flex: 18%;
   border-bottom: 3px solid #303744
-  /*background-color: crimson;*/
+}
+
+.users-icon {
+  background-image: url(images/users.svg);
+}
+
+.locations-icon {
+  background-image: url(images/location.svg);
+}
+
+.workflows-icon {
+  background-image: url(images/workflow.svg);
+}
+
+.job-icon {
+  background-image: url(images/portfolio.svg);
+}
+
+.social-icon {
+  background-image: url(images/share.svg);
 }
 
 .sidebar-nav4 {
   flex: 48%;
-  /*background-color: cornflowerblue;*/
+}
+
+.admin-icon {
+  background-image: url(images/check-box-yellow.svg);
+}
+
+.design-icon {
+  background-image: url(images/blue-box.svg);
+}
+
+.exec-icon {
+  background-image: url(images/red-box.svg);
+}
+
+.hr-icon {
+  background-image: url(images/green-box.svg);
 }
 
 /* Header */
@@ -143,8 +204,8 @@ body {
   background-size: 2.5em;
   background-repeat: no-repeat;
   background-position: center;
-  height: 3.5em;
-  width: 3.5em;
+  height: 100%;
+  /*width: 3.5em;*/
   padding: 3em;
 }
 
@@ -163,7 +224,7 @@ body {
 /* Second from top Heading  */
 .header-2 {
   background-color: #FFF;
-  flex: 23%; 
+  flex: 19%; 
   display: flex;
   flex-direction: column;
 }
@@ -327,7 +388,7 @@ section {
 
 .graph-info {
   /*margin-top: 2rem;*/
-  padding: 0.6em 1em 0.6em 1em;
+  padding: 0.5em 1em 0.5em 1em;
   background-color: #fafafc;
   border-radius: 3em;
   border: 2px solid #e0e5eb;
@@ -353,8 +414,8 @@ section {
   background-image: url(images/bar-graph.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 15em;
-  min-width: 23em;
+  min-height: 14.5em;
+  min-width: 29em;
   margin-top: 1em;
 }
 
@@ -376,7 +437,7 @@ social media buttons on right*/
 
 main {
   background-color: #edf2f6;
-  flex: 60%;
+  flex: 62%;
   display: flex;
 }
 
@@ -400,7 +461,7 @@ main {
 }
 
 .header-job-description {
-  background-color: grey;
+  background-color: #727d93;
   height: 100%;
   padding: 1em;
   /*flex: auto;*/
@@ -410,6 +471,11 @@ tbody {
   background-color: #fff;
 }
 
+.th-1 {
+  font-size: 1.2em;
+  color: #fff;
+}
+
 th {
   min-width: 13em;
   padding: 1em;
@@ -417,6 +483,13 @@ th {
 
 .edit-job-btn {
   margin-left: 1em;
+  background-color: #7E8BA4;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem
 }
 
 
@@ -430,18 +503,46 @@ th {
 .social-buttons {
   flex: 26%;
   margin: 1em;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  font-size: 0.75rem;
+  height: 3rem;
+  justify-content: center;
+  margin: 0 0 1rem;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+.socialmedia-icons {
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .facebook {
   background-color: #4a6fc1
 }
 
+.facebook-logo {
+  background-image: url(images/facebook-logo.svg);
+}
+
 .twitter {
   background-color: #02a9ef;
 }
 
+.twitter-logo {
+  background-image: url(images/twitter.svg);
+}
+
 .linkedin {
   background-color: #0381bc;
+}
+
+.linkedin-logo {
+  background-image: url(images/linkedin.svg);
 }
 
 .lower-section-container {
@@ -450,17 +551,61 @@ th {
 }
 
 .link {
-  background-color: orange;
+  
   flex: 33.33%
 }
 
 .use {
-  background-color: blue;
   flex: 33.33%;
 }
 
 .update {
-  background-color: yellow;
   flex: 33.33%;
+}
+
+h4 {
+  color: #556072;
+  font-weight: 600;
+  margin: 1.25rem 0 1rem;
+}
+
+.line-break {
+  border-bottom: 2px solid black;
+}
+
+.social-links {
+  color: #727D93;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  height: 2.5rem;
+  overflow: hidden;
+  padding: 0.85rem 0 0 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.social-tags {
+  background-color: #fff;
+  color: #727D93;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  height: 2.5rem;
+  width: 80%;
+  margin: 1em 0 1em 0;
+}
+
+.copy-button {
+  background-color: #68B8BF;
+  border: none;
+  border-radius: 3px;
+  color: #FFFFFF;
+  height: 2.5rem;
+  width: 20%;
+  margin: 1em 0 1em 0;
 }
 
