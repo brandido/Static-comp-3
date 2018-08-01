@@ -185,7 +185,7 @@ h5 {
 }
 
 .three-images {
-  align-items: center
+  align-items: center;
   display: flex;
   flex: 10%;
 }
