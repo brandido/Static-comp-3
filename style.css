@@ -31,7 +31,7 @@ body {
 
 .sidebar-nav1 {
   align-items: center;
-  border-bottom: 3px solid #303744
+  border-bottom: 3px solid #303744;
   display: flex;
   flex: 12%;
   flex-direction: column;
@@ -43,8 +43,16 @@ body {
   background-image: url(images/shawn_headshot.jpg);
   background-size: cover;
   border-radius: 50%;
-  min-height: 6em;
-  min-width: 6em;
+  height: 90px;
+  margin: auto;
+  margin-top: 1em;
+  width: 90px;
+}
+
+h5 {
+  text-align: center;
+  margin: 1em;
+  font-size: 1.2em
 }
 
 .sidebar-nav2 {
