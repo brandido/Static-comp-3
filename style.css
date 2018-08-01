@@ -96,7 +96,7 @@ body {
 
 /* Top Header */
 .header-1 {
-  flex: 4%;
+  flex: 8%;
   display: flex;
   /*justify-content: space-between;*/
 }
@@ -105,6 +105,7 @@ body {
   width: 5em
   border-right: 1px solid #f2f2f4;
   border-bottom: 1px solid #f2f2f4;
+  background-image: url(images/menu.svg);
 }
 
 .search-box {
@@ -115,23 +116,52 @@ body {
 
 .search-input {
   width: 100%;
-  font-size: 1.5em;
+  height: 100%;
+  text-indent: 3em;
+  font-size: 1em;
   border: none;
+  border-top: 1.5px solid #f2f2f5;
+  border-bottom: 1.5px solid #f2f2f5;
+  background-image: url(images/magnifying-glass.svg);
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .three-images {
   flex: 10%;
-  background-color: blue;
   display: flex;
+  align-items: center
 }
 
-.three-images div {
+.three-images button {
   flex: 33.33%;
+}
+
+.image-btns {
+  background-size: 2.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3.5em;
+  width: 3.5em;
+  padding: 3em;
+}
+
+.person {
+  background-image: url(images/man.svg);
+}
+
+.calendar {
+  background-image: url(images/calendar.svg);
+}
+
+.multi-menu {
+  background-image: url(images/mulit-menu.svg);
 }
 
 /* Second from top Heading  */
 .header-2 {
-  background-color: red;
+  background-color: #FFF;
 /*   flex: 12%; */
   display: flex;
   flex-direction: column;
@@ -139,24 +169,90 @@ body {
 
 .top-container-header-2 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 0;
 }
 
 fieldset {
-  background-color: cornflowerblue;
   flex: 72%;
 }
 
-.nav-right {
-  background-color: purple;
-  display: flex;
-  flex: 23%;
+.job-title {
+  font-size: 2em;
+  margin: 0 1.5em;
 }
 
+.location {
+  font-size: 1em;
+  margin: 1.2em;
+}
+
+.location-icon {
+  background-image: url(images/location.svg);
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 1em 3em;
+}
+
+.preview {
+  color: #45bbf3;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  flex: 23%;
+  min-width: 15em;
+}
+
+.button-title {
+  width: 2.5em;
+  height: 3.5em;
+  border: 2px solid #dee4e9;
+  display: inline-block;
+  vertical-align: middle;
+  color: #9ca3ae;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.button-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 5rem;
+}
+
+.edit-btns {
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3.5em;
+  width: 3.5em;
+}
+
+.bookmark-icon {
+  background-image: url(images/bookmark.svg);  
+}
+
+.edit-icon {
+  background-image: url(images/edit.svg);    
+} 
+
+.trash-icon {
+  background-image: url(images/waste.svg);    
+} 
+
 .nav-bottom {
-  background-color: yellow;
   display: flex;
   width: 80%;
   justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 /* .nav-bottom,h6 {
@@ -177,7 +273,6 @@ section {
   align-items: center;  
 }
 .section-container-left {
-  /*background-color: blue;*/
   flex: 53%
 }
 
@@ -256,7 +351,6 @@ section {
 }
 
 .bar-graph {
-  background-color: green;
   background-image: url(images/bar-graph.png);
   background-size: cover;
   background-repeat: no-repeat;
