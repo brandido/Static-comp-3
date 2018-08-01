@@ -8,7 +8,7 @@ body {
 /*   min-width: 900px; */
 /*   margin: 0 auto; */
   box-sizing: border-box;
-  height: 100vh;
+  /*height: 100vh;*/
 
   
 }
@@ -88,6 +88,7 @@ body {
 }
 
 /* Header */
+
 .column-2 {
   flex: 85%;
   display: flex;
@@ -95,10 +96,10 @@ body {
 }
 
 /* Top Header */
+
 .header-1 {
   flex: 8%;
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .nav-button {
@@ -162,7 +163,7 @@ body {
 /* Second from top Heading  */
 .header-2 {
   background-color: #FFF;
-/*   flex: 12%; */
+  flex: 23%; 
   display: flex;
   flex-direction: column;
 }
@@ -190,7 +191,7 @@ fieldset {
 
 .location-icon {
   background-image: url(images/location.svg);
-  background-size: 1.5em;
+  background-size: 1em;
   background-repeat: no-repeat;
   background-position: left;
   margin: 1em 3em;
@@ -205,6 +206,7 @@ fieldset {
   justify-content: space-between;
   flex: 23%;
   min-width: 15em;
+  margin-right: 3em;
 }
 
 .button-title {
@@ -255,16 +257,14 @@ fieldset {
   margin-bottom: 2em;
 }
 
-/* .nav-bottom,h6 {
-  background-color: brown;
-}
- */
 
 /* Middle section with graphs */
+
 section {
   background-color: #edf2f6;
-  flex: 24%;
+  flex: 32%;
   display: flex;
+  /*border-bottom: 1px solid darkgrey;*/
 }
 
 .section-container-left {
@@ -285,7 +285,6 @@ section {
 .circle-graph {
   margin: 0 1em;
 }
-
 
 .circle-chart {
   height: 11rem;
@@ -354,9 +353,78 @@ section {
   background-image: url(images/bar-graph.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 83%;
-  min-width: 65%;
+  min-height: 15em;
+  min-width: 23em;
   margin-top: 1em;
+}
+
+
+/*Divider*/
+
+.middle-divider {
+  flex: 8%;
+  display: flex;
+  justify-content: center
+}
+
+.up-arrow {
+  background-image: url(images/upwards.svg);
+}
+
+/* bottom section with job description on left and 
+social media buttons on right*/
+
+main {
+  background-color: #edf2f6;
+  flex: 60%;
+  display: flex;
+}
+
+.main-container-left {
+  flex: 53%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+}
+
+/*Job Description Table*/
+
+
+.job-descripton {
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  height: 20%;
+}
+
+.header-job-description {
+  background-color: grey;
+  height: 100%;
+  padding: 1em;
+  /*flex: auto;*/
+}
+
+tbody {
+  background-color: #fff;
+}
+
+th {
+  min-width: 13em;
+  padding: 1em;
+}
+
+.edit-job-btn {
+  margin-left: 1em;
+}
+
+
+
+.main-container-right {
+  /*background-color: pink;*/
+  flex: 26%;
+  margin: 0 3%;
 }
 
 .social-buttons {
@@ -381,8 +449,6 @@ section {
   flex-direction: column;
 }
 
-
-
 .link {
   background-color: orange;
   flex: 33.33%
@@ -396,43 +462,5 @@ section {
 .update {
   background-color: yellow;
   flex: 33.33%;
-}
-
-/* bottom section with job description on left and 
-social media buttons on right*/
-
-main {
-  background-color: #edf2f6;
-  flex: 60%;
-  display: flex;
-}
-
-.main-container-left {
-  background-color: brown;
-  flex: 53%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 3%;
-
-}
-
-.job-descripton {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-  height: 20%;
-}
-
-.header-job-description {
-  background-color: grey;
-  height: 100%;
-  flex: auto;
-}
-
-.main-container-right {
-  /*background-color: pink;*/
-  flex: 26%;
-  margin: 0 3%;
 }
 
