@@ -495,6 +495,11 @@ th {
   padding: 1em;
 }
 
+.portrait-on-table {
+  display: flex;
+  align-items: center;
+}
+
 .edit-job-btn {
   border: none;
   background-color: #7E8BA4;
@@ -503,7 +508,33 @@ th {
   font-size: 0.85rem;
   font-weight: 700;
   margin-left: 1em;
-  padding: 0.5rem 1rem
+  padding-right: 1rem;
+  padding-bottom: 0.8em;
+}
+
+.pencil-icon {
+  height: 20px;
+    margin: 5px 5px 0 15px;
+    position: relative;
+    top: 5px;
+}
+
+/*.table-portrait {
+  background-image: url(images/shawn_headshot.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}*/
+
+
+.small-portrait {
+  border-radius: 50%;
+  display: inline;
+  height: 44px;
+  margin-right: 15px;
+  
 }
 
 .main-container-right {
