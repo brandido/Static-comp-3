@@ -749,8 +749,12 @@ h4 {
     margin: 0 1%;
   }
 
+  .section-container-right {
+    margin-bottom: 3em;
+  }
+
   .section-container-left {
-    flex: 35%
+    flex: 35%;
   }
 
   /*.bar-graph {
@@ -764,6 +768,7 @@ h4 {
 
   .section-container-right-buttons {
     align-items: center;
+    margin: 2em 0;
   }
 
   .text-fill {
@@ -789,13 +794,13 @@ h4 {
 @media screen and (max-width: 800px) {
 
   /*remove text from buttons and titles on bottom right*/
-  .btn-txt {
+  /*.btn-txt {
     display: none;
   }
 
   .social-tags {
     width: 3em;
-  }
+  }*/
 }
 
 @media screen and (max-width: 540px) {
