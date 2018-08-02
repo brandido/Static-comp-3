@@ -592,6 +592,15 @@ th {
   flex-direction: column;
 }
 
+.icon-sizing {
+  width: 1em;
+  margin-right: 0.3em;
+}
+
+.text-styling {
+  font-size: 1.5em;
+}
+
 .link {
   
   flex: 33.33%
@@ -603,6 +612,7 @@ th {
 
 .update {
   flex: 33.33%;
+  margin: 1em 0;
 }
 
 h4 {
@@ -693,9 +703,23 @@ h4 {
     flex: none;
   }
 
+  .social-tags {
+    width: 63%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
+
+  .header-1,
+  .header-2,
+  section {
+    flex: none;;
+  }
+
+  .nav-bottom {
+    width: 100%;
+  }
 
   section {
     flex-direction: column;
@@ -705,25 +729,73 @@ h4 {
     display: none;
   }
 
+  /*.circle-graphs-container {
+  height: 28em;
+  }*/
+
+
   .bar-graph {
     margin-top: none;
+    min-width: 29em;
   }
 
-  section {
+
+  /*section {
+    flex: 50%;
+  }*/
+
+  .main-container-left,
+  .main-container-right {
+    margin: 0 1%;
+  }
+
+  .section-container-left {
+    flex: 35%
+  }
+
+  /*.bar-graph {
+    min-width: 29em;
+  }*/
+
+  main {
+    flex-direction: column;
     flex: 50%;
   }
 
-  .section-container-right {
+  .section-container-right-buttons {
+    align-items: center;
+  }
+
+  .text-fill {
+    display: none;
+  }
+
+  .social-buttons {
+    width: 50%;
+  }
+
+
+  .submit-btn {
+    flex-direction: row;
 
   }
 
-  .bar-graph {
-    min-width: 29em;
+  .socialmedia-icons {
+    margin: 0;
   }
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 
+  /*remove text from buttons and titles on bottom right*/
+  .btn-txt {
+    display: none;
+  }
+
+  .social-tags {
+    width: 3em;
+  }
 }
 
 @media screen and (max-width: 540px) {
