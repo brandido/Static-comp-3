@@ -57,7 +57,7 @@ h5 {
 }
 
 .sidebar-nav2 {
-  border-bottom: 3px solid #303744
+  border-bottom: 3px solid #303744;
   flex: 18%;
   flex-direction: column;
   justify-content: space-around;
@@ -649,5 +649,49 @@ h4 {
   height: 2.5rem;
   width: 20%;
   margin: 1em 0 1em 0;
+}
+
+/*Media Queries*/
+
+/*@media screen and (min-width: 900px) {
+  body {
+    background: yellow;
+  }
+}*/
+
+@media screen and (max-width: 1380px) {
+
+  .search-box {
+    flex: 70%;
+  }
+
+/*3 images buttons need to compress*/
+  .three-images button {
+    flex: none;
+  }
+
+  /*bar graph needs to have less width/*/
+  .bar-graph {
+    min-width: 22em;
+  }
+  
+}
+
+
+@media screen and (max-width: 1140px) {
+
+  /*Put bar graph under circle graphs*/
+
+  /*section-container-right-buttons need to shrink or be repositioned*/
+  
+
+  .sidebar {
+    display: none;
+  }
+
+  .column-1 {
+    flex: none;
+  }
+
 }
 
